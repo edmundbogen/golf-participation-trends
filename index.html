@@ -114,67 +114,87 @@
             <h3>🦠 COVID-19 Impact (2020-2024)</h3>
             <p><strong>Game Changer:</strong> Pandemic created massive surge in golf participation due to outdoor safety. Golf became the preferred "socially distant" leisure activity, driving unprecedented demand for golf courses and adjacent properties.</p>
             <ul>
-                <li><span class="stat">+38%</span> increase vs. 2019 pre-pandemic levels</li>
-                <li><span class="stat">3+ million</span> new golfers annually since 2020</li>
-                <li><span class="stat">500+ million</span> rounds played yearly (2020-2024)</li>
+                <li><span class="stat">3 million</span> first-time golfers in 2020 (highest ever recorded)</li>
+                <li><span class="stat">61 million</span> more rounds played in 2020 vs 2019 (+13.9%)</li>
+                <li><span class="stat">545 million</span> rounds in 2024 (record high)</li>
             </ul>
         </div>
 
         <div class="insights">
             <div class="insight-card">
                 <h3>📈 Participation Growth</h3>
-                <p><strong>2004-2010:</strong> Tiger Woods effect peaked at 30.6M golfers</p>
-                <p><strong>2011-2019:</strong> Steady decline to low of 23.8M</p>
-                <p><strong>2020-2024:</strong> Historic comeback to <span class="stat">28.1M</span> golfers</p>
+                <p><strong>2000-2005:</strong> Tiger Woods effect: 28.8M → 30M golfers</p>
+                <p><strong>2010-2019:</strong> Decline to 24M (economic downturn)</p>
+                <p><strong>2020-2024:</strong> Historic comeback to <span class="stat">28.1M</span> on-course</p>
+                <p><strong>Total Engagement:</strong> <span class="stat">64.3M</span> Americans (includes off-course)</p>
             </div>
 
             <div class="insight-card">
-                <h3>👥 Demographic Shift</h3>
-                <p><strong>Women:</strong> +23% growth since 2018 (now 7.9M players)</p>
-                <p><strong>Millennials:</strong> Largest age group (18-34: 6.3M players)</p>
-                <p><strong>Diversity:</strong> 25% are people of color (vs 8% in 1990)</p>
+                <h3>👥 Demographic Shift (2019-2024)</h3>
+                <p><strong>Youth:</strong> +40% growth (fastest growing segment)</p>
+                <p><strong>People of Color:</strong> +27% increase</p>
+                <p><strong>Women:</strong> +25% growth (now 7.9M players)</p>
+                <p><strong>Millennials (18-34):</strong> <span class="stat">6.8M</span> on-course players</p>
             </div>
 
             <div class="insight-card">
                 <h3>🏠 Property Value Impact</h3>
-                <p><strong>Golf Course Premium:</strong> <span class="stat">8-12%</span> average increase</p>
-                <p><strong>Luxury Markets:</strong> Up to <span class="stat">30%</span> premium</p>
-                <p><strong>South Florida:</strong> Frontage adds <span class="stat">8-12%</span> value</p>
+                <p><strong>Private Communities:</strong> <span class="stat">12.5%</span> premium</p>
+                <p><strong>Prime View Lots:</strong> <span class="stat">42-85%</span> higher prices</p>
+                <p><strong>Within 200ft:</strong> Up to <span class="stat">21%</span> premium (Portland study)</p>
+                <p><strong>⚠️ Risk:</strong> <span class="stat">-50%</span> value loss when courses close</p>
             </div>
 
             <div class="insight-card">
-                <h3>🌴 Florida Leadership</h3>
-                <p><strong>Nation's Leader:</strong> <span class="stat">500+</span> residential golf communities</p>
-                <p><strong>Market Position:</strong> 2x more than California (next closest)</p>
-                <p><strong>Development:</strong> 12+ new projects in pipeline</p>
+                <h3>🌴 Florida Development Boom</h3>
+                <p><strong>Market Leader:</strong> <span class="stat">500+</span> residential golf communities</p>
+                <p><strong>New Courses:</strong> FL/TX/SC account for <span class="stat">35%</span> of 2024 builds</p>
+                <p><strong>Housing Integration:</strong> <span class="stat">42%</span> new courses include housing</p>
+                <p><strong>Palm Beach Growth:</strong> <span class="stat">+9.99%</span> taxable values (2023-24)</p>
+            </div>
+
+            <div class="insight-card">
+                <h3>💰 Luxury Market Trends</h3>
+                <p><strong>High-End Development:</strong> Cabot Citrus Farms cottages start at <span class="stat">$1.8M</span></p>
+                <p><strong>Course Integration:</strong> <span class="stat">42%</span> new courses vs <span class="stat">25%</span> existing include housing</p>
+                <p><strong>Private Focus:</strong> <span class="stat">80%</span> of new courses are private clubs</p>
+                <p><strong>Cash Buyers:</strong> Wealth migration driving renovation investments</p>
+            </div>
+
+            <div class="insight-card">
+                <h3>📊 Market Dynamics</h3>
+                <p><strong>Rounds Played:</strong> <span class="stat">545M</span> in 2024 (record high)</p>
+                <p><strong>Sustained Demand:</strong> <span class="stat">500M+</span> rounds yearly since 2020</p>
+                <p><strong>New Golfers:</strong> <span class="stat">3M</span> beginners in 2020 (highest ever)</p>
+                <p><strong>Course Appreciation:</strong> Golf homes appreciate <span class="stat">7%</span> annually</p>
             </div>
         </div>
 
         <div style="margin-top: 30px; text-align: center; color: #b8d4c2;">
-            <p><em>Sources: National Golf Foundation, Golf Datatech, Florida Atlantic University Real Estate Research</em></p>
+            <p><em>Sources: National Golf Foundation, USGA, Golf DataTech, Academic Hedonic Pricing Studies, Palm Beach County Property Appraisers</em></p>
         </div>
     </div>
 
     <script>
         const ctx = document.getElementById('golfChart').getContext('2d');
 
-        // Data based on research findings
+        // Data based on research findings from comprehensive report
         const golfData = {
-            labels: ['2004', '2006', '2008', '2010', '2012', '2014', '2016', '2018', '2020', '2022', '2024'],
+            labels: ['2000', '2005', '2010', '2014', '2019', '2020', '2021', '2022', '2023', '2024'],
             datasets: [{
                 label: 'On-Course Golfers (Millions)',
-                data: [29.5, 30.6, 28.6, 26.1, 25.7, 24.7, 23.8, 24.2, 24.8, 25.6, 28.1],
+                data: [28.8, 30.0, 26.1, 30.0, 24.0, 24.8, 25.1, 26.0, 26.3, 28.1],
                 borderColor: '#4CAF50',
                 backgroundColor: 'rgba(76, 175, 80, 0.1)',
                 fill: true,
                 tension: 0.4,
-                pointBackgroundColor: ['#4CAF50', '#4CAF50', '#FF5722', '#FF5722', '#FF5722', '#FF5722', '#FF5722', '#4CAF50', '#FFC107', '#FFC107', '#4CAF50'],
+                pointBackgroundColor: ['#4CAF50', '#4CAF50', '#FF5722', '#FFC107', '#FF5722', '#FFC107', '#4CAF50', '#4CAF50', '#4CAF50', '#4CAF50'],
                 pointBorderColor: '#fff',
                 pointBorderWidth: 2,
                 pointRadius: 6
             }, {
-                label: 'Total Golf Participation (On+Off Course)',
-                data: [null, null, null, null, null, null, 29.6, 33.5, 37.5, 45.0, 47.2],
+                label: 'Total Golf Engagement (Millions)',
+                data: [null, null, null, null, null, 36.9, 40.0, 50.0, 60.0, 64.3],
                 borderColor: '#2196F3',
                 backgroundColor: 'rgba(33, 150, 243, 0.1)',
                 fill: false,
@@ -195,7 +215,7 @@
                 plugins: {
                     title: {
                         display: true,
-                        text: 'Golf Participation: Tiger Effect → Decline → COVID Boom',
+                        text: 'Golf Participation: Tiger Boom → Decline → COVID Renaissance',
                         color: '#fff',
                         font: {
                             size: 18,
